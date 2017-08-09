@@ -1,33 +1,42 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>My Little Boilerplate</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" />
-		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
-		<link href="less/style.less" rel="stylesheet/less" type="text/css" />
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/less.js/2.1.1/less.min.js"></script>
-	</head>
-	<body>
-		<div class="container">
-			<div class="row">
-				<!-- content -->
-			</div>
+<head>
+	<title>My Little Boilerplate</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="icon" href="data:,">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<style type="text/less">
+		.row {
+			h1 {
+				color: red;
+			}
+		}
+	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<h1>Example Text Styled</h1>
+			<!-- content -->
 		</div>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.15/require.min.js"></script>
-		<script>
-            require.config({
-                paths: {
-                    "jquery" : "https://code.jquery.com/jquery-2.1.1.min",
-                    "main": "js/application"
-                }
-            });
-            require(["main"]);
-        </script>
-        <!-- 
-			basic boilerplate for simple stand alone pages
-			@see https://github.com/lautr/HTML-Boilerplate
-        -->
-	</body>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+	<script type="text/babel">
+	  $(document).ready(function () {
+		const getMessage = () => `Hello World`;
+		console.log(getMessage());
+	  });
+	</script>
+	<!--
+	basic boilerplate for simple stand alone pages
+	with everything inline in case you don't want or need assets
+	@see https://github.com/lautr/HTML-Boilerplate
+	-->
+</body>
 </html>
